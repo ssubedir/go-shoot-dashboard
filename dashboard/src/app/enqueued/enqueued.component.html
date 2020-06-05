@@ -1,0 +1,44 @@
+<div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Tasks Queue</h1>
+      </div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Queue</th>
+            <th scope="col">Workers</th>
+            <th scope="col">Next Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">DEFAULT</th>
+            <td>DEFAULT</td>
+            <td>
+                <div>
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Task</th>
+                            <th scope="col">Enqueued</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of qdata">
+                            <th scope="row"><a>{{ item.task_id }}</a></th>
+                            <td><span class="badge badge-secondary">{{item.task_status}}</span></td>
+                            <td>{{item.task_name}}</td>
+                            <td>{{ getDateFiff(item.task_enqueued_time) }}</td>                    
+                         </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+</div>

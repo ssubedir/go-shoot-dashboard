@@ -1,0 +1,27 @@
+<div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Scheduled Tasks</h1>
+      </div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">State</th>
+            <th scope="col">Task</th>
+            <th scope="col">Created</th>
+            <th scope="col">Scheduled</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of sdata">
+            <th scope="row"><a>{{ item.task_id }}</a></th>
+            <td><span class="badge badge-secondary">{{item.task_status}}</span></td>
+            <td>{{item.task_name}}</td>
+            <td>{{getDateFiff(item.task_created_time)}}</td>  
+            <td>{{getDateFiff(item.task_scheduled_time)}}</td>  
+         </tr>
+        </tbody>
+      </table>
+      
+</div>
