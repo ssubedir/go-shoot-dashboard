@@ -55,7 +55,11 @@ or
 ```
 go run main.go 
 ```
-
+Services ports
+```
+  Api :9000
+  Dashboard:9001
+```
 ## Built With
 
 * [GO](https://golang.org/) - Programming language
