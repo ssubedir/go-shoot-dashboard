@@ -60,6 +60,15 @@ Services ports
   Api :9000
   Dashboard :9001
 ```
+### Docker
+
+```
+// Build
+docker build -t go-shoot .
+// Run
+docker run -d -p 9000:9000 -p 9001:9001 go-shoot
+```
+
 ## Built With
 
 * [GO](https://golang.org/) - Programming language
