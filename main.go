@@ -36,7 +36,7 @@ func main() {
 
 	// create a new server
 	s := http.Server{
-		Addr:         "localhost:9000",  // configure the bind address
+		Addr:         ":9000",           // configure the bind address
 		Handler:      ch(sm),            // set the default handler
 		ReadTimeout:  5 * time.Second,   // max time to read request from the client
 		WriteTimeout: 10 * time.Second,  // max time to write response to the client
