@@ -18,7 +18,7 @@ Required prerequisites
 
 Use git clone to get your local copy 
 ```
-git clone https://github.com/ssubedir/goriffin
+git clone https://github.com/ssubedir/go-shoot-dashboard
 ```
 
 ## Deployment
